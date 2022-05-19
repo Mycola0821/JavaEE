@@ -9,37 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fdf47c5-a065-463e-8bdf-4f01bff75d68" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Project_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Project_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/WaterGate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Filter/LoginFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Listener/ServerlnitListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Servlet/AddGateServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Servlet/DeleteGateServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Servlet/GetGatesServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Servlet/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Servlet/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Servlet/LogoutServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Servlet/ModifyGateServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/addGate.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/main.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/modifyGate.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="4fdf47c5-a065-463e-8bdf-4f01bff75d68" name="变更" comment="原文稿" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,8 +109,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652926047661</updated>
-      <workItem from="1652926048892" duration="415000" />
+      <workItem from="1652926048892" duration="796000" />
     </task>
+    <task id="LOCAL-00001" summary="原文稿">
+      <created>1652926611026</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652926611026</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,5 +134,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="原文稿" />
+    <option name="LAST_COMMIT_MESSAGE" value="原文稿" />
   </component>
 </project>
