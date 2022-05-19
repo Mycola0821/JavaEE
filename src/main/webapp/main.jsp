@@ -8,9 +8,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>简单水闸信息管理系统</title>
 </head>
 <body>
-
+<img src="mainimg.img">
+<br>
+<label>欢迎回来，用户</label>
+<jsp:scriptlet>
+    out.println("欢迎回来，用户"+request.getParameter("username.session"));
+</jsp:scriptlet>
 </body>
 </html>
