@@ -1,4 +1,4 @@
-package Servlet;
+package com.Servlet;
 
 public class ModifyGateServlet {
 }

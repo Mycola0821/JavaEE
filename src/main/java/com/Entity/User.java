@@ -1,4 +1,4 @@
-package Entity;
+package com.Entity;
 
 /**
  * <p>水闸管理系统的用户类。内部属性包括用户的用户名、工号、

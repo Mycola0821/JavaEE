@@ -1,4 +1,4 @@
-package Entity;
+package com.Entity;
 
 /**
  * 水闸管理系统的水闸类。内部属性包括水闸的编号、名称、建成时间

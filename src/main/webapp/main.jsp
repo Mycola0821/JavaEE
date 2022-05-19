@@ -14,8 +14,6 @@
 <img src="mainimg.img">
 <br>
 <label>欢迎回来，用户</label>
-<jsp:scriptlet>
-    out.println("欢迎回来，用户"+request.getParameter("username.session"));
-</jsp:scriptlet>
+
 </body>
 </html>
