@@ -1,7 +1,9 @@
 package com.Servlet;
 
 
-public class LoginServlet {
+import javax.servlet.http.HttpServlet;
+
+public class LoginServlet extends HttpServlet {
     private String username;
     private String password;
 
