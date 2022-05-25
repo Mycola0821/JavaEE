@@ -14,7 +14,7 @@
 <%
     request.setCharacterEncoding("UTF-8");
     String user = request.getParameter("name");
-    String pass = request.getParameter("psd");
+    String pass = request.getParameter("pwd");
     if (("臭高羽".equals(user)) && ("123456".equals(pass))){
     }
     else {
