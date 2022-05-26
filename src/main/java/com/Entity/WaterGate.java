@@ -10,8 +10,8 @@ public class WaterGate {
     private String name;
     private String buildTime;
     private String master;
-    private double longitude;
-    private double latitude;
+    private String longitude;
+    private String latitude;
     private String introduction;
 
     /**
@@ -25,7 +25,7 @@ public class WaterGate {
      * @param latitude     纬度
      * @param introduction 简介
      */
-    public WaterGate(String id, String name, String buildTime, String master, double longitude, double latitude, String introduction) {
+    public WaterGate(String id, String name, String buildTime, String master, String longitude, String latitude, String introduction) {
         this.id = id;
         this.name = name;
         this.buildTime = buildTime;
@@ -67,19 +67,19 @@ public class WaterGate {
         this.master = master;
     }
 
-    public double getLongitude() {
+    public String getLongitude() {
         return longitude;
     }
 
-    public void setLongitude(double longitude) {
+    public void setLongitude(String longitude) {
         this.longitude = longitude;
     }
 
-    public double getLatitude() {
+    public String getLatitude() {
         return latitude;
     }
 
-    public void setLatitude(double latitude) {
+    public void setLatitude(String latitude) {
         this.latitude = latitude;
     }
 
