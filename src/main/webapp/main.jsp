@@ -26,8 +26,8 @@
         function approach(dataArray){
             $.each(dataArray,function (index,item) {
                 let tr;
-                tr += "<td>" + item.+ "</td>";
-                tr += "<td>" + item. + "</td>";
+                tr += "<td>" + item.name+ "</td>";
+                tr += "<td>" + item.id+ "</td>";
                 tr += "<td>" + item.+ "</td>";
                 tr += "<td>" + item.+ "</td>";
                 tr += "<td><a href='modifyGate.jsp?id="+ item.id+"'>修改</a></td>";
@@ -58,7 +58,8 @@
 <div id="main_page" style="width:1080px;margin: 0 auto">
 <img alt="" src="img/main.jpeg" height="400px" width="600px" >
 <br>
-    <label>欢迎回来，用户<%=user%>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label><a id="main_logout" href="LogoutServlet">退出登录</a>
+    <label>欢迎回来，用户<%=user%>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    </label><a id="main_logout" href="LogoutServlet">退出登录</a>
     <div id="main_list">
         <table id="arraylist" >
             <tr>

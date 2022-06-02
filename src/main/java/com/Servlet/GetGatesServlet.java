@@ -14,7 +14,7 @@ import com.fasterxml.jackson.databind.*;
 /**
  * Servlet implementation class GetGatesServlet
  */
-@WebServlet("/GetGatesServlet")
+@WebServlet("/com/GetGatesServlet")
 public class GetGatesServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
@@ -41,15 +41,6 @@ public class GetGatesServlet extends HttpServlet {
         response.setContentType("text/html;charset=utf-8");
         request.setCharacterEncoding("utf-8");
 
-        ServletContext application = getServletConfig().getServletContext();
-        ArrayList WaterGates = (ArrayList) application.getAttribute("WaterGates");
-        ObjectMapper mapper = new ObjectMapper();
-        mapper.enable(SerializationFeature.INDENT_OUTPUT);
-        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-        String jsonStr = mapper.writeValueAsString(WaterGates);
-
-        PrintWriter writer = response.getWriter();
-        response.getWriter().write(jsonStr);
     }
 
 }

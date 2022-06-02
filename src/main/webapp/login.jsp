@@ -45,7 +45,7 @@
 <div id="main_div">
     <label id="main_title">简单水闸信息管理系统</label>
     <%// 暂用main.jsp直接跳转测试，后续改为LoginServlet//%>
-    <form method="post" action="main.jsp" id="main_form">
+    <form method="post" action="LoginServlet" id="main_form">
         <label style="font-size: 25px">用户名：<input type="text" name="name" id="main_user" placeholder="请输入用户名" required autofocus></label>
         <br>
         <label style="font-size: 25px">密&emsp;码：<input type="password" name="pwd" id="main_pwd" placeholder="请输入密码"></label>

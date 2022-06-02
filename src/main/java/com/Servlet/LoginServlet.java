@@ -2,6 +2,7 @@ package com.Servlet;
 
 
 import com.Entity.User;
+import com.jdbc.service.user.UserService;
 
 import javax.servlet.*;
 import javax.servlet.annotation.*;
@@ -19,18 +20,19 @@ public class LoginServlet extends HttpServlet {
         doPost(request, response);
     }
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws  IOException {
         response.setContentType("text/html;charset=utf-8");
         request.setCharacterEncoding("utf-8");
-
-        ServletContext application = getServletConfig().getServletContext();
-        ArrayList<User> users = (ArrayList) application.getAttribute("users");
-
-        PrintWriter out = response.getWriter();
-
+        // 获取登录用户名
         String username = request.getParameter("name");
         String password = request.getParameter("pwd");
 
+        //数据库导出用户信息
+        UserService service = new UserService();
+        User userDB = service.selectUser(username);
+        String passwordDB = userDB.getPassword();
+
+        PrintWriter out = response.getWriter();
 
         out.println("<html><body>");
         if (null == username || username.length() == 0) {
@@ -39,15 +41,8 @@ public class LoginServlet extends HttpServlet {
         else if (null == password || password.length() == 0) {
             out.println("密码不能为空");
         }
-        else if (username.length() > 0 && password.length() > 0) {
-            int flag = 0;
-            for(User user : users){
-                if(username.equals(user.getUsername()) && password.equals(user.getPassword())){
-                    flag = 1;
-                    break;
-                }
-            }
-            if (flag == 1) {
+        else  {
+            if ( password.equals(passwordDB)) {
                 request.getSession().setAttribute("name", username);
                 response.sendRedirect("main.jsp");
             }

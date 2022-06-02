@@ -1,6 +1,6 @@
 package com.Listener;
 
-import com.Entity.WaterGate;
+import com.Entity.Sluice;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -8,19 +8,19 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class ServerlnitListener implements ServletContextListener, HttpSessionListener, HttpSessionAttributeListener {
-    ArrayList<WaterGate> waterGates = new ArrayList<>();
+    ArrayList<Sluice> sluices = new ArrayList<>();
     public void contextInitialized(ServletContextEvent sce) {
         ServletContext servletContext = sce.getServletContext();
-        ArrayList<WaterGate> waterGates = new ArrayList<>();
+        ArrayList<Sluice> waterGates = new ArrayList<>();
         try {
             BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\Users\\ASUS\\IdeaProjects\\Project\\src\\main\\webapp\\GateList.txt"), "UTF-8"));
             String s = "";
             String[] arr = null;
-            WaterGate wg = null;
+            Sluice wg = null;
             while ((s = br.readLine()) != null) {
                 arr = s.split(",");
-                wg = new WaterGate(arr[0], arr[1], arr[2], arr[3], arr[4], arr[5], arr[6]);
-                waterGates.add(wg);
+                wg = new Sluice(arr[0], arr[1], arr[2], arr[3], arr[4], arr[5], arr[6]);
+                //Sluice.(wg);
             }
         } catch (
                 UnsupportedEncodingException e) {
