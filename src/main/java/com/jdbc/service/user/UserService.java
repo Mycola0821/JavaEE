@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 public class UserService {
 
     @Autowired
-    private UserDao userDao;
+    private UserDao userDao = new UserDaoImpl();
 
     /**
      * 查询用户的方法。

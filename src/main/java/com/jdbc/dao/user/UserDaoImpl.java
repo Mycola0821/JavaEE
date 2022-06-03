@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 public class UserDaoImpl implements UserDao {
 
     @Autowired
-    private JdbcTemplate jdbcTemplate;
+    private JdbcTemplate jdbcTemplate = new JdbcTemplate();
 
     @Override
     public User select(String username) {

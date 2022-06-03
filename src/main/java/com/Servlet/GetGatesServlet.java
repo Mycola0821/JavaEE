@@ -9,8 +9,12 @@ import javax.servlet.http.HttpServletResponse;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
+import java.util.List;
 
+import com.Entity.Sluice;
 import com.fasterxml.jackson.databind.*;
+import com.jdbc.service.sluice.SluiceService;
+
 /**
  * Servlet implementation class GetGatesServlet
  */
@@ -40,7 +44,10 @@ public class GetGatesServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=utf-8");
         request.setCharacterEncoding("utf-8");
+        SluiceService service = new SluiceService();
+
+        ArrayList slvice =service.selectAllSluice();
+
 
     }
-
 }

@@ -5,6 +5,7 @@ import com.jdbc.dao.sluice.SluiceDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -59,7 +60,7 @@ public class SluiceService {
      *
      * @return 所有水闸类
      */
-    public List<Sluice> selectAllSluice() {
-        return sluiceDao.selectAll();
+    public ArrayList<Sluice> selectAllSluice() {
+        return (ArrayList<Sluice>) sluiceDao.selectAll();
     }
 }

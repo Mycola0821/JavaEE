@@ -38,7 +38,7 @@
 </style>
 <div id="main_div">
     <label id="main_title">增加水闸</label>
-    <form method="post" action="/AddGateServlet" id="main_form">
+    <form method="post" action="AddGateServlet" id="main_form">
         <label style="font-size: 25px">&emsp;&emsp;编号：<input type="text" name="id" class="addGateInput"  required autofocus></label>
         <br>
         <label style="font-size: 25px">&emsp;水闸名：<input type="text" name="name" class="addGateInput" ></label>
